@@ -2,6 +2,7 @@
 require_once(__DIR__."/../vendor/autoload.php");
 
 use Drumser\Stack\SimpleStack;
+use Drumser\Exceptions\EmptyStackException;
 
 class SimpleStackTest extends \PHPUnit_Framework_TestCase
 {
@@ -33,6 +34,11 @@ class SimpleStackTest extends \PHPUnit_Framework_TestCase
         $this->simpleStack->push($data);
         $result = $this->simpleStack->peek();
         $this->assertEquals($data, $result);
+    }
+
+    public function testStackSizeException() {
+        $this->expectException("Drumser\\Exceptions\\EmptyStackException");
+        $this->simpleStack->pop();
     }
 
     public function stackDataProvider() {
