@@ -1,0 +1,20 @@
+{
+    "name": "quantick/stack",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Kladov",
+            "email": "mail@kladov.xyz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drumser\\": "packets/"
+        }
+    }
+}
