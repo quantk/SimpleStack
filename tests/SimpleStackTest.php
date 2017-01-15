@@ -2,7 +2,6 @@
 require_once(__DIR__."/../vendor/autoload.php");
 
 use Drumser\Stack\SimpleStack;
-use Drumser\Exceptions\EmptyStackException;
 
 class SimpleStackTest extends \PHPUnit_Framework_TestCase
 {
