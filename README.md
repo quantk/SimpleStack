@@ -8,4 +8,10 @@
     
     // Getting data
     $lastData = $simpleStack->pop();
+    
+    // Get data without delete from stack
+    $lastData = $simpleStack->peek();
+    
+    // Is stack empty?
+    $isEmpty = $simpleStack->isEmpty();
 ```

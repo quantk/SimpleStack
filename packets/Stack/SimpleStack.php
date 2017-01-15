@@ -68,7 +68,7 @@ class SimpleStack
     /**
      * @return bool
      */
-    private function isEmpty() {
+    public function isEmpty() {
         return $this->head === null;
     }
 }
